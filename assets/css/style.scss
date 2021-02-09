@@ -64,9 +64,10 @@ h1, h2, h3, h4 {
     color: Wheat;
 }
 a.buttons{
+    color: white;
     padding: 5px;
     width: 132px;
-    height: 50px;
+    height: 30px;
     display: inline-block;
     text-align: center;
     border-radius: 3px;
@@ -74,13 +75,11 @@ a.buttons{
 }
 a.name {
     border: thin solid #A3F;
-    color: white;
     background-color: #316;
     text-decoration: none;
     font-size: .85em;
 }
 a.downloads{
-    color: white;
     background-color: red;
     border: thin solid #600;
 }
