@@ -30,9 +30,9 @@ header.header {
     grid-area: header;
     align-self: start;
     width: 220px;
+    max-width: 220px;
 }
 footer.foot{
-    display: grid;
     grid-area: foot;
     align-self: end;
 }
@@ -45,7 +45,6 @@ section{
 }
 
 @media only screen 
-  and (min-device-width: 375px) 
   and (max-device-width: 812px) 
   { 
     .container {
@@ -55,6 +54,9 @@ section{
         "header"
         "maincontent"
         "foot";
+    }
+    header.header{
+        width: 100%;
     }
     section.main {
         grid-area: maincontent;
