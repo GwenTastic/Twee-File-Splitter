@@ -63,30 +63,37 @@ section{
 h1, h2, h3, h4 {
     color: Wheat;
 }
-
+a.button{
+    padding: 5px;
+    width: 132px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 3px;
+    text-shadow: rgba(0,0,0,0.4) 0 -1px 0;
+}
 a.name {
     border: thin solid #A3F;
     color: white;
     background-color: #316;
-    padding: 5px;
-    width: 132px;
     text-decoration: none;
-    display: inline-block;
-    text-align: center;
     font-size: .85em;
-    border-radius: 3px;
-    text-shadow: rgba(0,0,0,0.4) 0 -1px 0;
+}
+a.download{
+    color: white;
+    background-color: red;
+    border: thin solid #600;
 }
 a.button img{
     margin-right: 5px;
+}
+
+p > img {
+    margin: auto;
+    width: 100%;
 }
 
 blockquote.info {
     background-color: #321;
     border: medium double #FA3;
     padding: 5px 5px 5px 10px;
-}
-p > img {
-    margin: auto;
-    width: 100%;
 }
