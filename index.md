@@ -1,5 +1,5 @@
 ## Welcome to Gwen[Tastic]'s Twee File Splitting Tool!
-A self-contained Desktop application for turning the large files, that come from decompiling a Twine html file, into smaller ones with options to define your folder and file structure.
+A self-contained Desktop application for turning the large files, which come from decompiling a Twine html file, into smaller ones with options to define your folder and file structure.
 
 ### Usage:
 Once it's downloaded and running there are 3 Main things:
