@@ -13,7 +13,7 @@ You can type directly in those Textboxes to set an Input file or Output Folder, 
 After you selected an Input file, it will read the Passage names and Tags and add them in the lists on the right side.
 
 
-> ```When you have a Separation Rule open you can quickly add/remove a Passage name or Tag to the Separation Rule using the Listboxes on the right.```
+<blockquote class="info">When you have a Separation Rule open you can quickly add/remove a Passage name or Tag to the Separation Rule using the Listboxes on the right.<blockquote>
 
 
 You can alter Separation Tools by clicking on the Listbox Item on the left, add new ones by clicking the Button "New Rule" under the Listbox for the Separation Rules.
@@ -38,7 +38,7 @@ Once you have selected a rule, a Panel in the middle will open up, in there you'
 Once you are done setting up the rules you can hit the red `Separate Passages!` button.
 
 
-> ```Setting rules is optional you can also just hit the red "Separate Passages!" button immediately```
+<blockquote class="info">Setting rules is optional you can also just hit the red "Separate Passages!" button immediately<blockquote>
 
 
 ## Showcase:
