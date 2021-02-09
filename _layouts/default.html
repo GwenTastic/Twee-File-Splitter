@@ -19,7 +19,7 @@
         <p class="header">{{ site.description | default: site.github.project_tagline }}</p>
         
           {% if site.show_downloads %}
-          Application version: {{ site.app_version }} <br>
+          <p>Application version: {{ site.app_version }} </p>
           <p class="header">
             <a class="button download" href="assets/downloads/Twee File Spliter_x86.zip"><img src="assets/images/arrow-down.png"/>Download x86</a>
           </p>
@@ -30,7 +30,7 @@
           
 
         {% if site.github.is_project_page %}
-        This project is maintained by <br>
+        <p>This project is maintained by </p>
         <p class="header">
           <a class="button name" href="{{ site.github.owner_url }}"><img src="assets/images/octocat-small.png"/> {{ site.owner_name }}</a></p>
         {% endif %}
