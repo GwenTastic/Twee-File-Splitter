@@ -32,6 +32,7 @@ a.name {
     color: white;
     background-color: #316;
     padding: 5px;
+    padding-left: 7px;
     width: 132px;
     text-decoration: none;
     display: inline-block;
@@ -39,7 +40,10 @@ a.name {
     font-size: .85em;
     border-radius: 3px;
     text-shadow: rgba(0,0,0,0.4) 0 -1px 0;
-} 
+}
+a.name img{
+    margin-left: 5px;
+}
 
 blockquote.info {
     background-color: #321;
