@@ -24,12 +24,12 @@ section.main {
     align-self: stretch;
     margin-left: 15%;
 }
-header {
+header.header {
     grid-area: header;
     align-self: start;
     width: 220px;
 }
-footer{
+footer.foot{
     grid-area: footer;
     align-self: end;
 }
