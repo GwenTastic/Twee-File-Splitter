@@ -12,7 +12,7 @@
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
+  { 
     .container {
         grid-template-rows: 10% 80% 10%;
         grid-template-areas: 
@@ -25,7 +25,7 @@
 .main {
     grid-area: main;
     align-self: stretch;
-    margin-left: 5%;
+    margin-left: 15%;
 }
 .header {
     grid-area: header;
@@ -83,7 +83,7 @@ blockquote.info {
     border: medium double #FA3;
     padding: 5px 5px 5px 10px;
 }
-img {
+p > img {
     margin: auto;
     width: 100%;
 }
