@@ -35,6 +35,6 @@ blockquote {
     background-color: rgba(16, 16, 16, .5);
     border: thick double #FA3;
 }
-blockquote > blockquote{
+blockquote blockquote{
     border: none;
 }
