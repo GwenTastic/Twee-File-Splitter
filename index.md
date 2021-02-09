@@ -7,7 +7,7 @@ Once it's downloaded and running there are 3 Main things:
 > 2. An Output folder in which all Files and Folders should be created in.
 > 3. Separation Rules, the list on the left side shows all current Separation rules, these rules determain how Passages get sorted and/or Merged.
 
-![](https://github.com/GwenTastic/Twee-File-Splitter/blob/main/Images/TweeFileSplitter_1.png)
+![](assets/images/TweeFileSplitter_1.png)
 
 You can type directly in those Textboxes to set an Input file or Output Folder, or use the Open File/Folder buttons.
 After you selected an Input file, it will read the Passage names and Tags and add them in the lists on the right side.
@@ -27,9 +27,9 @@ Once you have selected a rule, a Panel in the middle will open up, in there you'
 > > `Contains:` Only needs to appear within the string, eg.: `Widget` contains `idg`.<br>
 > > `Ends With:` Meant as a Suffix, same as `Starts With` just that it searches how the passage/tag ends.<br>
 > > `Merge into One` When selected it will merge every match into a single file, for example `StoryData` and `StoryTitle` would be contained by 1 `StoryData.tw` file.<br>
-![](https://github.com/GwenTastic/Twee-File-Splitter/blob/main/Images/TweeFileSplitter_SeparationRule.png)
+![](assets/images/TweeFileSplitter_SeparationRule.png)
 
 
 ## Showcase
-![](https://github.com/GwenTastic/Twee-File-Splitter/blob/main/Images/TweeFileSplitter_demo_1.gif)
+![](assets/images/TweeFileSplitter_demo_1.gif)
 
