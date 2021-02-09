@@ -1,37 +1,35 @@
-## Welcome to GitHub Pages
+## Welcome to Gwen[tastic]'s Twee File Splitting Tool!
+A Self contained Desktop Application for turning the large files, that come from decompiling a Twine html file, into smaller ones with options to define your folder and file structure.
 
-You can use the [editor on GitHub](https://github.com/GwenTastic/Twee-File-Splitter/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+### Usage:
+Once it's downloaded and running there are 3 Main things:
+> 1. The Input file you can choose the file to split as Input File.
+> 2. An Output folder in which all Files and Folders should be created in.
+> 3. Separation Rules, the list on the left side shows all current Separation rules, these rules determain how Passages get sorted and/or Merged.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+![](https://i.imgur.com/8IxTdxF.png)
 
-### Markdown
+You can type directly in those Textboxes to set an Input file or Output Folder, or use the Open File/Folder buttons.
+After you selected an Input file, it will read the Passage names and Tags and add them in the lists on the right side.
+> When you have a Separation Rule open you can quickly add/remove a Passage name or Tag to the Separation Rule using the Listboxes on the right.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+You can alter Separation Tools by clicking on the Listbox Item on the left, add new ones by clicking the Button "New Rule" under the Listbox for the Separation Rules.
 
-```markdown
-Syntax highlighted code block
+## Separation Rules
+Once you have selected a rule, a Panel in the middle will open up, in there you'll find the settings.
+> - `Rule Name:` This field can be ignored since it's only for the application and only affects the name in the list on the left.
+> - `Folder Name:` Setting this field will create a folder or even Folders within Folders. 
+> - `Passage Names:` A list of passage names that will be assoziated with this rule.
+> - `Tag Names:` A list of Tag names that will be assoziated with this rule.
+> - `Options:` In here search criterias can be set in which files should be sorted into a folder and/or merged into a single file.
+> > `Matches Exactly:` If a Passage matches exactly one of the Passage/Tag Names from the list then it will be sorted in the given folder.
+> > `Starts With:` Meant for prefixes as an example `Story` would Match with `StoryData` and `StoryTitle`.
+> > `Contains:` Only needs to appear within the string, eg.: `Widget` contains `idg`.
+> > `Ends With:` Meant as a Suffix, same as `Starts With` just that it searches how the passage/tag ends.
+> > `Merge into One` When selected it will merge every match into a single file, for example `StoryData` and `StoryTitle` would be contained by 1 `StoryData.tw` file.
+![](Images/TweeFileSplitter_SeparationRule.png)
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+## Showcase
+![](Images/TweeFileSplitter_demo_1.gif)
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/GwenTastic/Twee-File-Splitter/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
