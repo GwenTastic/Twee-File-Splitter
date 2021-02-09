@@ -72,14 +72,15 @@ a.button{
     text-align: center;
     border-radius: 3px;
     text-shadow: rgba(0,0,0,0.4) 0 -1px 0;
+    font-size: .85em;
 }
 a.name {
     border: thin solid #A3F;
     background-color: #316;
     text-decoration: none;
-    font-size: .85em;
+    
 }
-a.downloads{
+a.download{
     background-color: red;
     border: thin solid #600;
 }
