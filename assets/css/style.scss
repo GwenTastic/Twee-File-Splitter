@@ -33,5 +33,8 @@ a.name {
 
 blockquote {
     background-color: rgba(16, 16, 16, .5);
-    border: thick double #AF3;
+    border: thick double #FA3;
+}
+blockquote > blockquote{
+    border: none;
 }
