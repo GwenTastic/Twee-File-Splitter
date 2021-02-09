@@ -16,11 +16,11 @@ code{
     grid-template-rows: auto 10%;
     gap: 15px auto;
     grid-template-areas: 
-    "header main"
-    "footer main";
+    "header maincontent"
+    "foot main";
 }
 section.main {
-    grid-area: main;
+    grid-area: maincontent;
     align-self: stretch;
     margin-left: 15%;
 }
@@ -30,7 +30,7 @@ header.header {
     width: 220px;
 }
 footer.foot{
-    grid-area: footer;
+    grid-area: foot;
     align-self: end;
 }
 section{
@@ -50,11 +50,11 @@ section{
         grid-template-rows: 10% 80% 10%;
         grid-template-areas: 
         "header"
-        "main"
-        "footer";
+        "maincontent"
+        "foot";
     }
     section.main {
-        grid-area: main;
+        grid-area: maincontent;
         align-self: stretch;
         margin-left: 5%;
     }
