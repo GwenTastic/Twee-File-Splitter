@@ -69,17 +69,27 @@ p.header{
 }
 a.button{
     color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    cursor: pointer;
     padding: 5px;
     width: 132px;
     height: 25px;
     display: inline-block;
     text-align: center;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     border-radius: 3px;
     text-shadow: rgba(0,0,0,0.4) 0 -1px 0;
     font-size: .85em;
 }
+a.button:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin: 8px 10px 12px;
+    background-position: right center;
+}
 a.name {
     border: thin solid #A3F;
+    background-image: linear-gradient(to bottom, #A3F 0%, #316 51%, #111 100%);
+    
     background-color: #316;
     text-decoration: none;
 }
