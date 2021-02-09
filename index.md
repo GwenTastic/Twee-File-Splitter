@@ -1,11 +1,11 @@
-## Welcome to Gwen[tastic]'s Twee File Splitting Tool!
+## Welcome to Gwen[Tastic]'s Twee File Splitting Tool!
 A Self contained Desktop Application for turning the large files, that come from decompiling a Twine html file, into smaller ones with options to define your folder and file structure.
 
 ### Usage:
 Once it's downloaded and running there are 3 Main things:
 > 1. The Input file you can choose the file to split as Input File.
 > 2. An Output folder in which all Files and Folders should be created in.
-> 3. Separation Rules, the list on the left side shows all current Separation rules, these rules determain how Passages get sorted and/or Merged.
+> 3. Separation Rules, the list on the left side shows all current Separation rules, these rules determine how Passages get sorted and/or Merged.
 
 ![](assets/images/TweeFileSplitter_1.png)
 
@@ -19,9 +19,9 @@ You can alter Separation Tools by clicking on the Listbox Item on the left, add 
 Once you have selected a rule, a Panel in the middle will open up, in there you'll find the settings.
 > - `Rule Name:` This field can be ignored since it's only for the application and only affects the name in the list on the left.
 > - `Folder Name:` Setting this field will create a folder or even Folders within Folders. 
-> - `Passage Names:` A list of passage names that will be assoziated with this rule.
-> - `Tag Names:` A list of Tag names that will be assoziated with this rule.
-> - `Options:` In here search criterias can be set in which files should be sorted into a folder and/or merged into a single file.
+> - `Passage Names:` A list of passage names that will be associated with this rule.
+> - `Tag Names:` A list of Tag names that will be associated with this rule.
+> - `Options:` In here your search criteria can be set in which files should be sorted into a folder and/or merged into a single file.
 > > `Matches Exactly:` If a Passage matches exactly one of the Passage/Tag Names from the list then it will be sorted in the given folder.<br>
 > > `Starts With:` Meant for prefixes as an example `Story` would Match with `StoryData` and `StoryTitle`.<br>
 > > `Contains:` Only needs to appear within the string, eg.: `Widget` contains `idg`.<br>
@@ -30,7 +30,8 @@ Once you have selected a rule, a Panel in the middle will open up, in there you'
 ![](assets/images/TweeFileSplitter_SeparationRule.png)
 
 Once you are done setting up the rules you can hit the red `Separate Passages!` button.
-
+> *Setting rules is optional you can also just hit the red `Separate Passages!` button immediately* 
 ## Showcase:
+Here's an example workflow
 ![](assets/images/TweeFileSplitter_demo_1.gif)
 
