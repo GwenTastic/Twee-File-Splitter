@@ -32,6 +32,6 @@ Once you have selected a rule, a Panel in the middle will open up, in there you'
 Once you are done setting up the rules you can hit the red `Separate Passages!` button.
 > *Setting rules is optional you can also just hit the red `Separate Passages!` button immediately* 
 ## Showcase:
-Here's an example workflow
-![](assets/images/TweeFileSplitter_demo_1.gif)
+Here's an example workflow<br>
 
+![](assets/images/TweeFileSplitter_demo_1.gif)
