@@ -22,11 +22,11 @@ Once you have selected a rule, a Panel in the middle will open up, in there you'
 > - `Passage Names:` A list of passage names that will be assoziated with this rule.
 > - `Tag Names:` A list of Tag names that will be assoziated with this rule.
 > - `Options:` In here search criterias can be set in which files should be sorted into a folder and/or merged into a single file.
-> > `Matches Exactly:` If a Passage matches exactly one of the Passage/Tag Names from the list then it will be sorted in the given folder.
-> > `Starts With:` Meant for prefixes as an example `Story` would Match with `StoryData` and `StoryTitle`.
-> > `Contains:` Only needs to appear within the string, eg.: `Widget` contains `idg`.
-> > `Ends With:` Meant as a Suffix, same as `Starts With` just that it searches how the passage/tag ends.
-> > `Merge into One` When selected it will merge every match into a single file, for example `StoryData` and `StoryTitle` would be contained by 1 `StoryData.tw` file.
+> > `Matches Exactly:` If a Passage matches exactly one of the Passage/Tag Names from the list then it will be sorted in the given folder.<br>
+> > `Starts With:` Meant for prefixes as an example `Story` would Match with `StoryData` and `StoryTitle`.<br>
+> > `Contains:` Only needs to appear within the string, eg.: `Widget` contains `idg`.<br>
+> > `Ends With:` Meant as a Suffix, same as `Starts With` just that it searches how the passage/tag ends.<br>
+> > `Merge into One` When selected it will merge every match into a single file, for example `StoryData` and `StoryTitle` would be contained by 1 `StoryData.tw` file.<br>
 ![](Images/TweeFileSplitter_SeparationRule.png)
 
 
