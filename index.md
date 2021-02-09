@@ -26,7 +26,7 @@ Once you have selected a rule, a Panel in the middle will open up, in there you'
 > > `Starts With:` Meant for prefixes as an example `Story` would Match with `StoryData` and `StoryTitle`.<br>
 > > `Contains:` Only needs to appear within the string, eg.: `Widget` contains `idg`.<br>
 > > `Ends With:` Meant as a Suffix, same as `Starts With` just that it searches how the passage/tag ends.<br>
-> > `Merge into One` When selected it will merge every match into a single file, for example `StoryData` and `StoryTitle` would be contained by 1 `StoryData.tw` file.<br>
+> > `Merge into One:` When selected it will merge every match into a single file, for example `StoryData` and `StoryTitle` would be contained by 1 `StoryData.tw` file.<br>
 ![](assets/images/TweeFileSplitter_SeparationRule.png)
 
 
