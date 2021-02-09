@@ -44,6 +44,52 @@ footer {
     position: static;
     margin-left: auto;
 }
+@media only screen and (max-device-width: 1950px) {
+    body{
+        margin-top: 1em;
+        padding-top: 0px;
+    }
+    .container {
+        grid-template-columns: 15% 80%;
+        grid-template-rows: 10% 85% 1%;
+        grid-template-areas: 
+        "heads main" 
+        "0 main" 
+        "foot foot";
+    }
+    header {
+        margin: auto;
+        margin-right: 0px;
+        padding: 10px 10px 0px 20px;
+        left: 0px;
+        max-width: 220px;
+        display: grid-inline;
+        align-self: stretch;
+        grid-area: heads;
+        position: fixed;
+    }
+    section {
+        grid-area: main;
+        align-self: stretch;
+        width: auto;
+        max-width: 75%;
+        width: 80%;
+        left:0px;
+        padding-left: 0px;
+        padding-top: 0px;
+        margin-left: -50px;
+    }
+    footer{
+        display:grid;
+        grid-area: foot;
+        align-self: stretch;
+        height: 25px;
+        width: 70%;
+        margin-left: -150px;
+        padding-left: 0px;
+    }
+}
+
 @media only screen and (max-device-width: 950px) {
     body{
         margin-top: 1em;
