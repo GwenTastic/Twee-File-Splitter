@@ -2,6 +2,40 @@
 ---
 @import 'jekyll-theme-dinky';
 
+.container {
+    grid-template-columns: 15% 75%;
+    grid-template-rows: 90% 10%;
+    grid-template-areas: 
+    "header main"
+    "footer main";
+}
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .container {
+        grid-template-rows: 10% 80% 10%;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }   
+}
+
+.main {
+    grid-area: main;
+    align-self: stretch;
+    margin-left: 5%;
+}
+.header {
+    grid-area: header;
+    align-self: start;
+}
+.footer{
+    grid-area: footer;
+    align-self: end;
+}
+
 body{
     background-color: #212121;
     color: white;
@@ -16,7 +50,7 @@ header{
 }
 
 section{
-    width: 50vw;
+    width: 50%;
     float: right;
     padding-bottom: 50px;
     left: 25%;

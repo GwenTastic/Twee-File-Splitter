@@ -13,8 +13,8 @@
     <![endif]-->
   </head>
   <body>
-    <div class="container">
-      <header class="header">
+    <div class="wrapper">
+      <header>
         <h1 class="header">{{ site.title | default: site.github.repository_name }}</h1>
         <p class="header">{{ site.description | default: site.github.project_tagline }}</p>
 
@@ -41,11 +41,11 @@
         {% endif %}
       </header>
 
-      <section class="main">
+      <section>
         {{ content }}
       </section>
 
-      <footer class="footer">
+      <footer>
         <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
         <p><small>Page Version: {{site.page_version}}</small></p>
       </footer>
