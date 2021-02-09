@@ -15,7 +15,7 @@ After you selected an Input file, it will read the Passage names and Tags and ad
 
 You can alter Separation Tools by clicking on the Listbox Item on the left, add new ones by clicking the Button "New Rule" under the Listbox for the Separation Rules.
 
-## Separation Rules
+#### Separation Rules:
 Once you have selected a rule, a Panel in the middle will open up, in there you'll find the settings.
 > - `Rule Name:` This field can be ignored since it's only for the application and only affects the name in the list on the left.
 > - `Folder Name:` Setting this field will create a folder or even Folders within Folders. 
@@ -26,10 +26,11 @@ Once you have selected a rule, a Panel in the middle will open up, in there you'
 > > `Starts With:` Meant for prefixes as an example `Story` would Match with `StoryData` and `StoryTitle`.<br>
 > > `Contains:` Only needs to appear within the string, eg.: `Widget` contains `idg`.<br>
 > > `Ends With:` Meant as a Suffix, same as `Starts With` just that it searches how the passage/tag ends.<br>
-> > `Merge into One` When selected it will merge every match into a single file, for example `StoryData` and `StoryTitle` would be contained by 1 `StoryData.tw` file.<br>
+> > `Merge into One:` When selected it will merge every match into a single file, for example `StoryData` and `StoryTitle` would be contained by 1 `StoryData.tw` file.<br>
 ![](assets/images/TweeFileSplitter_SeparationRule.png)
 
+Once you are done setting up the rules you can hit the red `Separate Passages!` button.
 
-## Showcase
+## Showcase:
 ![](assets/images/TweeFileSplitter_demo_1.gif)
 
