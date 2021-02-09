@@ -11,14 +11,20 @@ Once it's downloaded and running there are 3 Main things:
 
 You can type directly in those Textboxes to set an Input file or Output Folder, or use the Open File/Folder buttons.
 After you selected an Input file, it will read the Passage names and Tags and add them in the lists on the right side.
+
 <span class="info">
-> When you have a Separation Rule open you can quickly add/remove a Passage name or Tag to the Separation Rule using the Listboxes on the right.</span>
+
+> When you have a Separation Rule open you can quickly add/remove a Passage name or Tag to the Separation Rule using the Listboxes on the right.
+
+</span>
 
 You can alter Separation Tools by clicking on the Listbox Item on the left, add new ones by clicking the Button "New Rule" under the Listbox for the Separation Rules.
 
 #### Separation Rules:
 Once you have selected a rule, a Panel in the middle will open up, in there you'll find the settings.
+
 <span class="info">
+
 > - `Rule Name:` This field can be ignored since it's only for the application and only affects the name in the list on the left.
 > - `Folder Name:` Setting this field will create a folder or even Folders within Folders. 
 > - `Passage Names:` A list of passage names that will be associated with this rule.
@@ -29,13 +35,17 @@ Once you have selected a rule, a Panel in the middle will open up, in there you'
 > > `Contains:` Only needs to appear within the string, eg.: `Widget` contains `idg`.<br>
 > > `Ends With:` Meant as a Suffix, same as `Starts With` just that it searches how the passage/tag ends.<br>
 > > `Merge into One:` When selected it will merge every match into a single file, for example `StoryData` and `StoryTitle` would be contained by 1 `StoryData.tw` file.<br>
+
 </span>
 
 ![](assets/images/TweeFileSplitter_SeparationRule.png)
 
 Once you are done setting up the rules you can hit the red `Separate Passages!` button.
+
 <span class="info">
+
 > *Setting rules is optional you can also just hit the red `Separate Passages!` button immediately*
+
 </span>
 
 ## Showcase:
