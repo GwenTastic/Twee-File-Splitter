@@ -31,10 +31,7 @@ a.name {
     color: #A3F;
 } 
 
-blockquote {
+blockquote.info {
     background-color: rgba(16, 16, 16, .5);
     border: thick double #FA3;
-}
-blockquote blockquote{
-    border: none;
 }
