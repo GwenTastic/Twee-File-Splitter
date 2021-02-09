@@ -12,13 +12,12 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <div class="container">
-      <header class="header">
+  <body class="container">
+      <header>
         <h1 class="header">{{ site.title | default: site.github.repository_name }}</h1>
         <p class="header">{{ site.description | default: site.github.project_tagline }}</p>
         <br>
-          {% if site.show_downloads %}
+        {% if site.show_downloads %}
           
           <p>Application version: {{ site.app_version }} </p>
           <p class="header">
@@ -27,8 +26,8 @@
           <p class="header">
             <a class="button download" href="assets/downloads/Twee File Spliter_x64.zip"><img src="assets/images/arrow-down.png"/>Download x64</a>
           </p>
-            {% endif %} 
-            <br>
+          <br>
+        {% endif %} 
 
         {% if site.github.is_project_page %}
         <p>This project is maintained by </p>
@@ -37,15 +36,15 @@
         {% endif %}
       </header>
 
-      <section class="main">
+      <section>
         {{ content }}
       </section>
 
-      <footer class="foot">
+      <footer>
         <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
         <p><small>Page Version: {{site.page_version}}</small></p>
       </footer>
-    </div>
+
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     {% if site.google_analytics %}
       <script>

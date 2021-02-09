@@ -2,78 +2,138 @@
 ---
 @import 'jekyll-theme-dinky';
 
-body{
+
+body {
     background-color: #212121;
     color: white;
 }
-
-code{
+code {
     color: peachpuff;
 }
-
 .container {
-    // display: grid;
-    grid-template-columns: 15% auto;
+    display: grid;
+    grid-template-columns: 12% auto;
     grid-template-rows: auto 10%;
-    gap: 15px 15px;
+    gap: 15px 250px;
     justify-items: center;
     grid-template-areas: 
-    "header maincontent"
+    "heads main" 
     "foot main";
 }
-section.main {
-    grid-area: maincontent;
+header {
+    display: grid;
+    grid-area: heads;
     align-self: stretch;
-    margin-left: 15%;
-}
-header.header {
-    grid-area: header;
-    align-self: start;
-    width: 220px;
+    width: 100%;
     max-width: 220px;
+    color:indianred;
+    left: 20px;
+    margin-right: 20px;
 }
-footer.foot{
-    grid-area: foot;
-    align-self: end;
-}
-section{
-    width: 50%;
-    float: right;
-    padding-bottom: 50px;
-    left: 25%;
-    position: absolute;
+section {
+    display: grid;
+    grid-area: main;
+    align-self: stretch;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-@media only screen 
-  and (max-device-width: 812px) 
-  { 
+footer {
+    display: grid;
+    grid-area: foot;
+    align-self: stretch;
+    position: static;
+    margin-left: auto;
+}
+@media only screen and (max-device-width: 950px) {
+    body{
+        margin-top: 1em;
+        padding-top: 0px;
+    }
+    .container {
+        grid-template-columns: 10% 90%;
+        grid-template-rows: 10% 85% 5%;
+        grid-template-areas: 
+        "heads main" 
+        "0 main" 
+        "foot foot";
+    }
+    header {
+        margin: auto;
+        margin-right: 0px;
+        padding: 10px 10px 0px 20px;
+        left: 0px;
+        max-width: 220px;
+        color: rgb(112, 221, 157);
+        display: grid-inline;
+        align-self: stretch;
+        grid-area: heads;
+        position: fixed;
+    }
+    section {
+        grid-area: main;
+        align-self: stretch;
+        width: auto;
+        max-width: 75%;
+        width: 80%;
+        left:0px;
+        padding-left: 0px;
+        padding-top: 0px;
+        margin-left: -70px;
+    }
+    footer{
+        display:grid;
+        grid-area: foot;
+        align-self: stretch;
+        height: 25px;
+        width: 75%;
+        margin-left: 15px;
+    }
+}
+@media only screen and (max-device-width: 900px) {
     .container {
         grid-template-columns: 100%;
-        grid-template-rows: 10% 80% 10%;
+        grid-template-rows: 10% 85% 5%;
         grid-template-areas: 
-        "header"
-        "maincontent"
+        "heads" 
+        "main" 
         "foot";
     }
-    header.header{
+    header {
+        margin: 1em auto 0;
+        max-width: 80%;
+        min-width: 212px;
         width: 100%;
+        color: hotpink;
+        display: grid;
+        align-self: stretch;
+        grid-area: heads;
+        position: static;
     }
-    section.main {
-        grid-area: maincontent;
+    section {
+        grid-area: main;
         align-self: stretch;
         margin-left: 5%;
     }
+    footer{
+        display:grid;
+        grid-area: foot;
+        align-self: stretch;
+        height: 25px;
+        width: 90%;
+        margin-left: 10%;
+        position: static;
+    }
 }
-
 h1, h2, h3, h4 {
     color: Wheat;
 }
-p.header{
+p.header {
     margin: 10px 0px;
 }
-a.button{
+a.button {
     color: white;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     cursor: pointer;
     padding: 5px;
     width: 132px;
@@ -81,40 +141,37 @@ a.button{
     transition: 0.5s;
     display: inline-block;
     text-align: center;
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     border-radius: 3px;
-    text-shadow: rgba(0,0,0,0.4) 0 -1px 0;
-    font-size: .85em;
+    text-shadow: rgba(0, 0, 0, 0.4) 0 -1px 0;
+    font-size: 0.85em;
 }
-a.button:hover{
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+a.button:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     margin: 0px 12px;
     background-position: right center;
 }
 a.name {
-    border: thin solid #A3F;
-    background-image: linear-gradient(to bottom, #A3F 0%, #316 51%, #111 100%);
-    
+    border: thin solid #a3f;
+    background-image: linear-gradient(to bottom, #a3f 0%, #316 51%, #111 100%);
     background-color: #316;
     text-decoration: none;
 }
-a.download{
+a.download {
     font-size: 1em;
-    background-image: linear-gradient(to bottom, #F00 0%, #600 51%, #111 100%);
+    background-image: linear-gradient(to bottom, red 0%, #600 51%, #111 100%);
     background-color: red;
     border: thin solid #600;
 }
-a.button img{
+a.button img {
     margin-right: 5px;
 }
-
 p > img {
     margin: auto;
     width: 100%;
 }
-
 blockquote.info {
     background-color: #321;
-    border: medium double #FA3;
+    border: medium double #fa3;
     padding: 5px 5px 5px 10px;
 }
