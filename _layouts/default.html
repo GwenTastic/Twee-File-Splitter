@@ -17,10 +17,11 @@
       <header class="header">
         <h1 class="header">{{ site.title | default: site.github.repository_name }}</h1>
         <p class="header">{{ site.description | default: site.github.project_tagline }}</p>
-        <br><br>
+        <br>
           {% if site.show_downloads %}
-          <p>Application version: {{ site.app_version }} </p>
+          
           <p class="header">
+            <p>Application version: {{ site.app_version }} </p>
             <a class="button download" href="assets/downloads/Twee File Spliter_x86.zip"><img src="assets/images/arrow-down.png"/>Download x86</a>
           </p>
           <p class="header">
@@ -30,8 +31,9 @@
             <br>
 
         {% if site.github.is_project_page %}
-        <p>This project is maintained by </p>
+        
         <p class="header">
+          <p>This project is maintained by </p>
           <a class="button name" href="{{ site.github.owner_url }}"><img src="assets/images/octocat-small.png"/> {{ site.owner_name }}</a></p>
         {% endif %}
       </header>
