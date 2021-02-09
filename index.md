@@ -44,5 +44,7 @@ Once you are done setting up the rules you can hit the red `Separate Passages!` 
 ## Showcase:
 Here's an example workflow
 <p class="demo">
+
     ![](assets/images/TweeFileSplitter_demo_1.gif)
+
 </p>
