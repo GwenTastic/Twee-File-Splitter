@@ -17,27 +17,17 @@
       <header class="header">
         <h1 class="header">{{ site.title | default: site.github.repository_name }}</h1>
         <p class="header">{{ site.description | default: site.github.project_tagline }}</p>
-
-        <ul>
-          
+        
           {% if site.show_downloads %}
           Application version: {{ site.app_version }}
-            <li class="download"><a class="buttons" href="assets/downloads/Twee File Spliter_x86.zip">Download x86</a></li>
-            <li class="download"><a class="buttons" href="assets/downloads/Twee File Spliter_x64.zip">Download x64</a></li>
+            <a class="buttons download" href="assets/downloads/Twee File Spliter_x86.zip"><img src="assets/images/arrow-down.png"/>Download x86</a>
+            
+            </li><a class="buttons download" href="assets/downloads/Twee File Spliter_x64.zip"><img src="assets/images/arrow-down.png"/>Download x64</a>
           {% endif %} 
-          {% if site.show_projectgit %}
-            <li><a class="buttons github" href="{{ site.github.repository_url }}">View On GitHub</a></li>
-          {% endif %}
-          </ul>
+          
 
         {% if site.github.is_project_page %}
           <p class="header">This project is maintained by <a class="header name" href="{{ site.github.owner_url }}"><img src="assets/images/octocat-small.png"/> {{ site.owner_name }}</a></p>
-        {% endif %}
-
-        {% if site.github.is_user_page %}
-          <ul>
-            <li><a class="buttons github" href="{{ site.github.owner_url }}">GitHub Profile</a></li>
-          </ul>
         {% endif %}
       </header>
 
@@ -45,7 +35,7 @@
         {{ content }}
       </section>
 
-      <footer class="footer">
+      <footer>
         <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
         <p><small>Page Version: {{site.page_version}}</small></p>
       </footer>

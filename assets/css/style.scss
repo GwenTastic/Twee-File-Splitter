@@ -2,6 +2,15 @@
 ---
 @import 'jekyll-theme-dinky';
 
+body{
+    background-color: #212121;
+    color: white;
+}
+
+code{
+    color: peachpuff;
+}
+
 .container {
     grid-template-columns: 15% 75%;
     grid-template-rows: 90% 10%;
@@ -22,33 +31,20 @@
     }   
 }
 
-.main {
+section.main {
     grid-area: main;
     align-self: stretch;
     margin-left: 15%;
 }
-.header {
+header {
     grid-area: header;
     align-self: start;
+    width: 220px;
 }
-.footer{
+footer{
     grid-area: footer;
     align-self: end;
 }
-
-body{
-    background-color: #212121;
-    color: white;
-}
-
-code{
-    color: peachpuff;
-}
-
-header{
-    width: 220px;
-}
-
 section{
     width: 50%;
     float: right;
@@ -74,7 +70,7 @@ a.name {
     border-radius: 3px;
     text-shadow: rgba(0,0,0,0.4) 0 -1px 0;
 }
-a.name img{
+a.button img{
     margin-right: 5px;
 }
 
