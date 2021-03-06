@@ -1,7 +1,7 @@
 ## Welcome to Gwen[Tastic]'s Twee File Splitting Tool!
 A self-contained Desktop application for turning the large files, which come from decompiling a Twine html file, into smaller ones with options to define your folder and file structure.
 
-<blockquote class="warning">This is an unsigned Application, which accesses the File system so Windows Defender might Interfere with this application, if writing the files takes significant longer then it had reading the passages and tags (after inputting a source file) then that's probably due to Windows Defender. Not suggesting turning it off, but doing so can make a difference of the process taking an Hour or less then a minute depending on file size.</blockquote>
+<blockquote class="warning">This is an unsigned Application, which accesses the file system so Windows Defender might interfere with this application, if writing the files takes significant longer then it had reading the passages and tags (after inputting a source file) then that's probably due to Windows Defender. Not suggesting turning it off, but doing so can make a difference of the process taking an Hour or less then a Minute depending on file size.</blockquote>
 
 ### Usage:
 Once it's downloaded and running there are 3 Main things:
