@@ -3,6 +3,6 @@ show_downloads: true
 show_projectgit: false
 owner_name: "{Gwen[♡].Tastic}"
 page_version: 1.2.2
-app_version: 1.0.2
+app_version: 1.0.3
 google_analytics: true
 theme: jekyll-theme-dinky
