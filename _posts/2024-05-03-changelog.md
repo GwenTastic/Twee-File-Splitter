@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Changelogs
+title: Changelog v1.0.4
 tag: changelog
 ---
-### V 1.0.4
+### {{ post.title }} {{ date }}
 > Fixed `.tw3` and `.twee` file extensions being ignored for populating the Passage/Tags listboxes.
