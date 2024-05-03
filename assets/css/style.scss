@@ -256,7 +256,14 @@ blockquote.warning {
     padding: 5px 5px 5px 10px;
 }
 
-.entry {
-    display: inline-block;
-    
+#changelog #posts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 10px;
+}
+
+#changelog #posts .entry {
+    flex-grow: 3;
 }

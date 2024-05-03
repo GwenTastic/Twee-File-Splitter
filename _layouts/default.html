@@ -41,7 +41,9 @@
       </section>
 
       <section id="changelog">
-        {{ site.posts | find: "tag", "changelog"}}
+        <div id="posts">
+          {{ site.posts | find: "tag", "changelog"}}
+        </div>
       </section>
 
       <footer>
