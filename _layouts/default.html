@@ -46,7 +46,7 @@
           {% for post in site.posts %}
             {% if post.tag == "changelog" %}
             <div class="entry">
-              <h2> {{ post.title }} {{ post.date }}</h2>
+              <h3> {{ post.title }} {{ post.date-stamp }}</h3>
               <span> {{ post.content }}</span>
             </div>
             {% endif %}
