@@ -41,7 +41,7 @@
       </section>
 
       <section id="changelog">
-        {% include changelog.md %}
+        {{ site.posts | find: "tag", "changelog"}}
       </section>
 
       <footer>
