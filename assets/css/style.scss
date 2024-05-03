@@ -17,7 +17,8 @@ code {
     gap: 15px 250px;
     justify-items: center;
     grid-template-areas: 
-    "heads main" 
+    "heads main"
+    "changelog main" 
     "foot main";
 }
 header {
@@ -32,6 +33,14 @@ section {
     display: grid;
     grid-area: main;
     align-self: stretch;
+    margin-right: auto;
+    margin-left: 3em;
+}
+
+section.changelog {
+    display: grid;
+    grid-area: changelog;
+    align-self: self-end;
     margin-right: auto;
     margin-left: 3em;
 }
@@ -52,9 +61,9 @@ footer {
         grid-template-columns: 15% 80%;
         grid-template-rows: 10% 85% 1%;
         grid-template-areas: 
-        "heads main" 
-        "0 main" 
-        "foot foot";
+        "heads main main changelog" 
+        "0 main main changelog" 
+        "foot foot foot foot";
     }
     header {
         margin: auto;
@@ -85,6 +94,15 @@ footer {
         height: 25px;
         width: 70%;
         margin-left: -150px;
+        padding-left: 0px;
+    }
+    footer{
+        display: grid;
+        grid-area: changelog;
+        align-self: stretch;
+        // height: 25px;
+        // width: 70%;
+        // margin-left: -150px;
         padding-left: 0px;
     }
 }
