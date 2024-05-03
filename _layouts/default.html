@@ -45,12 +45,15 @@
         <div id="posts">
           {% for post in site.posts %}
             {% if post.tag == "changelog" %}
+            <div class="entry">
               <h2> {{ post.title }} {{ post.date }}</h2>
               <span> {{ post.content }}</span>
+            </div>
             {% endif %}
-          {% endfor %}
+            {% endfor %}
         </div>
       </section>
+
 
       <footer>
         <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
