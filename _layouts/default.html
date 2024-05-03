@@ -42,7 +42,11 @@
 
       <section id="changelog">
         <div id="posts">
-          {{ site.posts | find: "tag", "changelog"}}
+          {% for post in site.posts %}
+          {% if post.tag == "changelog" %}
+            <h2> {{ post.title }} {{ post.title }}</h2>
+            <span> {{ post.content }}</span>
+          {% endfor %}
         </div>
       </section>
 
