@@ -41,8 +41,6 @@ section#changelog {
     display: grid;
     grid-area: changelog;
     align-self: self-end;
-    margin-right: auto;
-    margin-left: 3em;
 }
 
 footer {
@@ -58,7 +56,7 @@ footer {
         padding-top: 0px;
     }
     .container {
-        grid-template-columns: 15% 5% 60% 15%;
+        // grid-template-columns: 15% 5% 40% 15%;
         grid-template-rows: 10% 85% 1%;
         grid-template-areas: 
         "heads main main changelog" 
@@ -79,13 +77,11 @@ footer {
     section {
         grid-area: main;
         align-self: stretch;
-        width: auto;
-
-
+        max-width: 700px;
         left:0px;
         padding-left: 0px;
         padding-top: 0px;
-        margin-left: -775px;
+        margin-left: -150px;
     }
     footer{
         display: grid;
@@ -101,9 +97,8 @@ footer {
         grid-area: changelog;
         align-self: stretch;
         // height: 25px;
-        width: 300px;
-        // margin-left: -150px;
-        padding-left: 0px;
+        width: 400px;
+        margin-left: -300px;
     }
 }
 
