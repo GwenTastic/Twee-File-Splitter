@@ -58,7 +58,7 @@ footer {
         padding-top: 0px;
     }
     .container {
-        grid-template-columns: 15% 70% 15%;
+        grid-template-columns: 15% 5% 60% 15%;
         grid-template-rows: 10% 85% 1%;
         grid-template-areas: 
         "heads main main changelog" 
@@ -80,12 +80,12 @@ footer {
         grid-area: main;
         align-self: stretch;
         width: auto;
-        max-width: 75%;
-        width: 80%;
+
+
         left:0px;
         padding-left: 0px;
         padding-top: 0px;
-        margin-left: -50px;
+        margin-left: -775px;
     }
     footer{
         display: grid;
@@ -101,7 +101,7 @@ footer {
         grid-area: changelog;
         align-self: stretch;
         // height: 25px;
-        // width: 70%;
+        width: 300px;
         // margin-left: -150px;
         padding-left: 0px;
     }
