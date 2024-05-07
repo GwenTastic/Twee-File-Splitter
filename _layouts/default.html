@@ -16,9 +16,15 @@
     
     <div id="modal">
       <div id="modal-content">
-
+        <div id="modal-header">
+          <span id="modal-title"></span>
+          <span id="btn-close-modal" class="close">&times;</span>
+        </div>
+        <div id="modal-body">
+        </div>    
       </div>
     </div>
+
       <header>
         <h1 class="header">{{ site.title | default: site.github.repository_name }}</h1>
         <p class="header">{{ site.description | default: site.github.project_tagline }}</p>

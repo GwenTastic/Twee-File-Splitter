@@ -61,7 +61,7 @@ Here's an example workflow (left mouse click to enlarge)
     image.addEventListener("click", function(e) {
       console.log("clicked");
       let modal = document.getElementById("modal");
-      let content = document.getElementById("modal-content");
+      let content = document.getElementById("modal-body");
       let img = document.querySelector("#preview-image img");
       console.log(img);
       modal.style.display = "block";
@@ -77,7 +77,7 @@ Here's an example workflow (left mouse click to enlarge)
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
       if (event.target == modal) {
-        let img = document.querySelector("#modal-content img");
+        let img = document.querySelector("#modal-body img");
         // let content = document.getElementById("");
         let content = document.getElementById("preview-image");
         
