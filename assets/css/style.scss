@@ -10,10 +10,12 @@
     --dark-red: #300; 
     --light-orange: #fa3;
     --dark-orange: #321;
+    --background: #212121;
+    --dark-background: ##171717;
 }
 
 body {
-    background-color: #212121;
+    background-color: var(--background);
     color: white;
 }
 code {
@@ -316,10 +318,10 @@ blockquote.warning {
   }
   
 #modal-content {
-    background-color: #fefefe;
+    background-color: var(--dark-background);
     margin: 15% auto; 
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid black;
     width: 90%; 
     background-repeat: no-repeat;
 }
