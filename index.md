@@ -53,9 +53,9 @@ Here's an example workflow (left mouse click to enlarge)
   function closeModal(event){
     let modal = document.getElementById("modal");
     let span = document.getElementById("btn-close-modal");
+    let img = document.querySelector("#modal-body img");
     
-    if (event.target == modal || event.target == span) {
-      let img = document.querySelector("#modal-body img");
+    if ((event.target == modal || event.target == span) && img != null) {
       let content = document.getElementById("preview-image");
       content.replaceChildren(img);
       modal.style.display = "none";
