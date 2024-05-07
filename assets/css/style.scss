@@ -2,6 +2,15 @@
 ---
 @import 'jekyll-theme-dinky';
 
+:root {
+    --light-purple: #a3f;
+    --dark-purple: #316;
+    --dark-purple-trans: #33116666;
+    --light-red: #f36; 
+    --dark-red: #300; 
+    --light-orange: #fa3;
+    --dark-orange: #321;
+}
 
 body {
     background-color: #212121;
@@ -99,6 +108,7 @@ footer {
         // height: 25px;
         width: 400px;
         margin-left: -300px;
+        height: 100%;
     }
 }
 
@@ -223,9 +233,9 @@ a.button:hover {
     background-position: right center;
 }
 a.name {
-    border: thin solid #a3f;
-    background-image: linear-gradient(to bottom, #a3f 0%, #316 51%, #111 100%);
-    background-color: #316;
+    border: thin solid var(--light-purple);
+    background-image: linear-gradient(to bottom, var(--light-purple) 0%, var(--dark-purple) 51%, #111 100%);
+    background-color: var(--dark-purple);
     text-decoration: none;
 }
 a.download {
@@ -242,8 +252,8 @@ p > img {
     width: 100%;
 }
 blockquote.info {
-    background-color: #321;
-    border: medium double #fa3;
+    background-color: var(--dark-orange);
+    border: medium double var(--light-orange);
     padding: 5px 5px 5px 10px;
 }
 img.demo {
@@ -251,8 +261,8 @@ img.demo {
     height: 100%;
 }
 blockquote.warning {
-    background-color: #300;
-    border: medium double #f36;
+    background-color: var(--dark-red);
+    border: medium double var(--light-red);
     padding: 5px 5px 5px 10px;
 }
 
@@ -261,10 +271,33 @@ blockquote.warning {
     flex-direction: column;
     align-items: flex-start;
     align-content: flex-start;
-    gap: 10px;
+    justify-content: flex-start;
+
+    height: 90%;
 }
 
 #changelog #posts .entry {
-    flex-grow: 3;
+    // flex-grow: 3;
     align-self: flex-start;
+}
+
+.center {
+    display: inline-block;
+    margin: 0px auto;
+}
+.center h3 {
+    display: inline-block;
+    margin: auto auto;
+    margin-top: 1em;
+}
+
+.entry h3 {
+    margin-top: .65em;
+    margin-left: .5em;
+}
+
+.entry {
+    background-color: var(--dark-purple-trans);
+    border: medium double var(--light-purple);
+    padding: 5px 5px 5px 10px;
 }
