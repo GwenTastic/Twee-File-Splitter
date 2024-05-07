@@ -44,6 +44,46 @@ Once you are done setting up the rules you can hit the red `Separate Passages!` 
 
 
 ## Showcase:
-Here's an example workflow
+Here's an example workflow (left mouse click to enlarge)
+<span id="preview-image">
+  <img class="demo" src="assets/images/TweeFileSplitter_demo_1.gif"/>
+</span>
 
-<img class="demo" src="assets/images/TweeFileSplitter_demo_1.gif"/>
+<script defer>
+  setTimeout(function() {
+    let modal = document.getElementById("modal");
+    let image = document.getElementById("preview-image");
+    console.log(image);
+    //var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the button, open the modal
+    console.log("setup image clicked");
+    image.addEventListener("click", function(e) {
+      console.log("clicked");
+      let modal = document.getElementById("modal");
+      let content = document.getElementById("modal-content");
+      let img = document.querySelector("#preview-image img");
+      console.log(img);
+      modal.style.display = "block";
+      content.replaceChildren(img);
+      // content.style.backgroundImage = `url("${img.src}")`; 
+    });
+
+    // When the user clicks on <span> (x), close the modal
+    // span.onclick = function() {
+      //   modal.style.display = "none";
+    // }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        let img = document.querySelector("#modal-content img");
+        // let content = document.getElementById("");
+        let content = document.getElementById("preview-image");
+        
+        content.replaceChildren(img);
+        modal.style.display = "none";
+      }
+    } 
+  }, 1000);
+</script>
