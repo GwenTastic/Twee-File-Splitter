@@ -8,9 +8,6 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
   </head>
   <body class="container">
     
@@ -58,7 +55,7 @@
           {% for post in site.posts %}
             {% if post.tag == "changelog" %}
             <div class="entry">
-              <h3> {{ post.title }} {{ post.date-stamp }}</h3>
+              <h3> <span class="title">{{ post.title }}</span> <span class="date">{{ post.date-stamp }}</span></h3>
               <span> {{ post.content }}</span>
             </div>
             {% endif %}
@@ -71,17 +68,5 @@
         <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
         <p><small>Page Version: {{site.page_version}}</small></p>
       </footer>
-
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    <!-- {% if site.google_analytics %}
-      <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', '{{ site.google_analytics }}', 'auto');
-        ga('send', 'pageview');
-      </script>
-    {% endif %} -->
   </body>
 </html>

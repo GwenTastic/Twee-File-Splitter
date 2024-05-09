@@ -1,13 +1,13 @@
 ---
---- 
+---
 @import 'jekyll-theme-dinky';
 
 :root {
     --light-purple: #a3f;
     --dark-purple: #316;
     --dark-purple-trans: #33116666;
-    --light-red: #f36;
-    --dark-red: #300;
+    --light-red: #f36; 
+    --dark-red: #300; 
     --light-orange: #fa3;
     --dark-orange: #321;
     --background: #212121;
@@ -19,23 +19,22 @@ body {
     background-color: var(--background);
     color: white;
 }
-
 code {
     color: peachpuff;
 }
 
+/* #region responsiveness */
 .container {
     display: grid;
     grid-template-columns: 12% auto;
     grid-template-rows: auto 10%;
-    gap: 15px 250px;
+    gap: 15px 50px;
     justify-items: center;
-    grid-template-areas:
-        "heads main"
-        "changelog main"
-        "foot main main";
+    grid-template-areas: 
+    "heads main"
+    "changelog main" 
+    "foot main main";
 }
-
 header {
     display: grid;
     grid-area: heads;
@@ -44,13 +43,12 @@ header {
     max-width: 220px;
     margin-right: 20px;
 }
-
 section {
     display: grid;
     grid-area: main;
-    align-self: stretch;
     margin-right: auto;
-    margin-left: 3em;
+    width: 90%;
+    // margin-left: 3em;
 }
 
 section#changelog {
@@ -66,22 +64,18 @@ footer {
     position: static;
     margin-left: auto;
 }
-
 @media only screen and (max-device-width: 1950px) {
     body {
         margin-top: 1em;
         padding-top: 0px;
     }
-
     .container {
-        // grid-template-columns: 15% 5% 40% 15%;
         grid-template-rows: 10% 85% 1%;
-        grid-template-areas:
-            "heads main main changelog"
-            "0 main main changelog"
-            "foot foot foot foot";
+        grid-template-areas: 
+        "heads main main changelog" 
+        "0 main main changelog" 
+        "foot foot foot foot";
     }
-
     header {
         margin: auto;
         margin-right: 0px;
@@ -93,17 +87,6 @@ footer {
         grid-area: heads;
         position: fixed;
     }
-
-    section {
-        grid-area: main;
-        align-self: stretch;
-        max-width: 700px;
-        left: 0px;
-        padding-left: 0px;
-        padding-top: 0px;
-        margin-left: -150px;
-    }
-
     footer {
         display: grid;
         grid-area: foot;
@@ -113,86 +96,52 @@ footer {
         margin-left: 55px;
         padding-left: 0px;
     }
-
     section#changelog {
-        display: grid;
-        grid-area: changelog;
-        align-self: stretch;
-        // height: 25px;
-        width: 400px;
-        margin-left: -300px;
         height: 100%;
     }
 }
 
-@media only screen and (max-device-width: 950px) {
+@media only screen and (max-device-width: 1300px) {
     body {
         margin-top: 1em;
         padding-top: 0px;
     }
-
     .container {
-        grid-template-columns: 10% 80%;
-        grid-template-rows: 10% 85% 5%;
-        grid-template-areas:
-            "heads main"
-            "changelog main"
-            "foot foot";
+        grid-template-columns: 1.4fr 5fr;
+        grid-template-areas: 
+        "heads main" 
+        "heads main" 
+        "foot changelog";
     }
-
-    header {
-        margin: auto;
-        margin-right: 0px;
-        padding: 10px 10px 0px 20px;
-        left: 0px;
-        max-width: 220px;
-        display: grid-inline;
-        align-self: stretch;
-        grid-area: heads;
-        position: fixed;
+    section h2 {
+        margin-top: .5em;
     }
-
-    section {
-        grid-area: main;
-        align-self: stretch;
-        width: auto;
-        max-width: 75%;
-        width: 80%;
-        left: 0px;
-        padding-left: 0px;
-        padding-top: 0px;
-        margin-left: -70px;
-    }
-
     section#changelog {
         display: grid;
         grid-area: changelog;
-        align-self: stretch;
-        max-width: 220px;
-        margin-left: 15px;
+        align-self: flex-start;
+        max-width: 90%;
+        margin-left: 5px;
     }
 
-    footer {
+    footer{
         display: grid;
         grid-area: foot;
         align-self: stretch;
-        height: 25px;
-        width: 75%;
-        margin-left: 15px;
+        width: 85%;
+        margin: 5px;
     }
 }
-
 @media only screen and (max-device-width: 900px) {
     .container {
         grid-template-columns: 100%;
         grid-template-rows: 10% 75% 10% 5%;
-        grid-template-areas:
-            "heads"
-            "main"
-            "changelog"
-            "foot";
+        grid-template-areas: 
+        "heads" 
+        "main"
+        "changelog"
+        "foot";
     }
-
     header {
         margin: 1em auto 0;
         max-width: 80%;
@@ -203,13 +152,12 @@ footer {
         grid-area: heads;
         position: static;
     }
-
     section {
         grid-area: main;
         align-self: stretch;
         margin-left: 5%;
     }
-
+    
     section#changelog {
         grid-area: changelog;
         align-self: stretch;
@@ -217,7 +165,7 @@ footer {
     }
 
     footer {
-        display: grid;
+        display:grid;
         grid-area: foot;
         align-self: stretch;
         height: 25px;
@@ -226,18 +174,15 @@ footer {
         position: static;
     }
 }
+/* #ebdreguib */
 
-h1,
-h2,
-h3,
-h4 {
+/* #region site styling */
+h1, h2, h3, h4 {
     color: Wheat;
 }
-
 p.header {
     margin: 10px 0px;
 }
-
 a.button {
     color: white;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -253,47 +198,39 @@ a.button {
     text-shadow: rgba(0, 0, 0, 0.4) 0 -1px 0;
     font-size: 0.85em;
 }
-
 a.button:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     margin: 0px 12px;
     background-position: right center;
 }
-
 a.name {
     border: thin solid var(--light-purple);
     background-image: linear-gradient(to bottom, var(--light-purple) 0%, var(--dark-purple) 51%, #111 100%);
     background-color: var(--dark-purple);
     text-decoration: none;
 }
-
 a.download {
     font-size: 1em;
     background-image: linear-gradient(to bottom, red 0%, #600 51%, #111 100%);
     background-color: red;
     border: thin solid #600;
 }
-
 a.button img {
     margin-right: 5px;
 }
-
-p>img {
+p > img {
     margin: auto;
     width: 100%;
 }
-
 blockquote.info {
     background-color: var(--dark-orange);
     border: medium double var(--light-orange);
     padding: 5px 5px 5px 10px;
 }
-
 img.demo {
     width: 100%;
     height: 100%;
 }
-
 blockquote.warning {
     background-color: var(--dark-red);
     border: medium double var(--light-red);
@@ -311,7 +248,6 @@ blockquote.warning {
 }
 
 #changelog #posts .entry {
-    // flex-grow: 3;
     align-self: flex-start;
 }
 
@@ -319,7 +255,6 @@ blockquote.warning {
     display: inline-block;
     margin: 0px auto;
 }
-
 .center h3 {
     display: inline-block;
     margin: auto auto;
@@ -329,25 +264,32 @@ blockquote.warning {
 .entry h3 {
     margin-top: .65em;
     margin-left: .5em;
+    margin-right: .5em;
 }
 
 .entry {
     background-color: var(--dark-purple-trans);
     border: medium double var(--light-purple);
     padding: 5px 5px 5px 10px;
+    width: 95%;
 }
+.entry .date {
+    float: right;
+}
+/* #endregion */
 
+/* #region modal stuffs */
 #modal {
-    display: none;
-    position: fixed;
+    display: none; 
+    position: fixed; 
     z-index: 1;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
+    width: 100%; 
+    height: 100%; 
     overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
 }
 
 #modal-content {
@@ -358,27 +300,26 @@ blockquote.warning {
     margin-top: 5em;
     padding: 0;
     width: 90%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     animation-name: animatetop;
     animation-duration: 0.4s
 }
 
 #modal-body {
-    margin: 3em auto;
+    margin: 3em auto; 
     padding: 20px;
-    width: 90%;
+    width: 90%; 
     background-repeat: no-repeat;
 }
-
+  
 .close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
-
-.close:hover,
-.close:focus {
+  
+.close:hover, .close:focus {
     color: var(--light-red);
     text-decoration: none;
     cursor: pointer;
@@ -391,27 +332,18 @@ blockquote.warning {
     margin: unset;
     padding: unset;
 }
-
 #modal-header {
     padding: 2px 16px;
     font-size: larger;
     background-color: var(--dark-purple-trans);
-    border-bottom: medium double var(--light-purple);
+    border-bottom: medium double var(--light-purple);    
     color: var(--white);
-}
+  }
 
-#modal-body {
-    padding: 2px 16px;
-}
+#modal-body {padding: 2px 16px;}
 
 @keyframes animatetop {
-    from {
-        top: -300px;
-        opacity: 0
-    }
-
-    to {
-        top: 0;
-        opacity: 1
-    }
-}
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+  }
+/* #endregion */
