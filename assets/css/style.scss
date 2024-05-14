@@ -15,6 +15,10 @@
     --white: #fff;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: var(--background);
     color: white;
@@ -23,12 +27,16 @@ code {
     color: peachpuff;
 }
 
+h1, h2, h3 {
+    margin-top: 0px;
+}
+
 /* #region responsiveness */
 .container {
     display: grid;
     grid-template-columns: 12% auto;
     grid-template-rows: auto 10%;
-    gap: 15px 50px;
+    gap: 16px 0px;
     justify-items: center;
     grid-template-areas: 
     "heads main"
@@ -39,22 +47,31 @@ header {
     display: grid;
     grid-area: heads;
     align-self: stretch;
-    width: 100%;
-    max-width: 220px;
-    margin-right: 20px;
+    position: unset;
+    margin: auto;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-left: 1em;
+    width: 255px;
+    float: unset;
 }
 section {
     display: grid;
     grid-area: main;
-    margin-right: auto;
-    width: 90%;
-    // margin-left: 3em;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    margin: 0px;
+    width: 100%;
+    float: unset;
 }
 
 section#changelog {
     display: grid;
     grid-area: changelog;
-    align-self: self-end;
+    align-self: self-start;
 }
 
 footer {
@@ -64,12 +81,19 @@ footer {
     position: static;
     margin-left: auto;
 }
-@media only screen and (max-device-width: 1950px) {
+
+@media print, screen and (max-width: 960px) {
+    header {
+        padding-right: unset;
+    }
+}
+@media (min-width: 1300px) {
     body {
         margin-top: 1em;
         padding-top: 0px;
     }
     .container {
+        grid-template-columns: 255px auto 2fr 1.1fr;
         grid-template-rows: 10% 85% 1%;
         grid-template-areas: 
         "heads main main changelog" 
@@ -77,16 +101,15 @@ footer {
         "foot foot foot foot";
     }
     header {
+        display: inline-grid;
         margin: auto;
         margin-right: 0px;
         padding: 10px 10px 0px 20px;
-        left: 0px;
-        max-width: 220px;
-        display: grid-inline;
+        width: 255px;
         align-self: stretch;
         grid-area: heads;
-        position: fixed;
     }
+
     footer {
         display: grid;
         grid-area: foot;
@@ -96,12 +119,10 @@ footer {
         margin-left: 55px;
         padding-left: 0px;
     }
-    section#changelog {
-        height: 98%;
-    }
+
 }
 
-@media only screen and (max-device-width: 1300px) {
+@media (max-width: 1300px) {
     body {
         margin-top: 1em;
         padding-top: 0px;
@@ -112,9 +133,6 @@ footer {
         "heads main" 
         "heads main" 
         "foot changelog";
-    }
-    section h2 {
-        margin-top: .5em;
     }
     section#changelog {
         display: grid;
@@ -132,7 +150,7 @@ footer {
         margin: 5px;
     }
 }
-@media only screen and (max-device-width: 900px) {
+@media (max-width: 900px) {
     .container {
         grid-template-columns: 100%;
         grid-template-rows: 10% 75% 10% 5%;
@@ -143,14 +161,10 @@ footer {
         "foot";
     }
     header {
-        margin: 1em auto 0;
-        max-width: 80%;
+        margin: 0px;;
+        max-width: 100%;
         min-width: 212px;
         width: 100%;
-        display: grid;
-        align-self: stretch;
-        grid-area: heads;
-        position: static;
     }
     section {
         grid-area: main;
