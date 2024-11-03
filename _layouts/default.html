@@ -13,6 +13,18 @@
     <![endif]-->
   </head>
   <body class="container">
+    
+    <div id="modal">
+      <div id="modal-content">
+        <div id="modal-header">
+          <span id="modal-title"></span>
+          <span id="btn-close-modal" class="close">&times;</span>
+        </div>
+        <div id="modal-body">
+        </div>    
+      </div>
+    </div>
+    
       <header>
         <h1 class="header">{{ site.title | default: site.github.repository_name }}</h1>
         <p class="header">{{ site.description | default: site.github.project_tagline }}</p>
@@ -41,12 +53,12 @@
       </section>
 
       <section id="changelog">
-        <span>Changelogs:</span>
         <div id="posts">
+          <span class="center"><h3>News:</h3></span>
           {% for post in site.posts %}
-            {% if post.tag == "changelog" %}
+            {% if post.tag == "changelog" or post.tag == "Release" %}
             <div class="entry">
-              <h3> {{ post.title }} {{ post.date-stamp }}</h3>
+              <h3> <span class="title">{{ post.title }}</span> <span class="date">{{ post.date-stamp }}</span></h3>
               <span> {{ post.content }}</span>
             </div>
             {% endif %}
